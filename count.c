@@ -4,8 +4,9 @@
 
 int main(int argc, char *argv[]) {
     int contador = 1;
-    pid_t rc;
-    rc = fork();
+  
+    int rc = fork();
+	
 	//printf("Hola (pid:%d)\n", (int) getpid());
     if (rc < 0) {
         fprintf(stderr, "fork failed\n");
